@@ -12,6 +12,11 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Dashboard from "./pages/artisan/Dashboard/Dashboard";
 import Orders from "./pages/artisan/Orders/Orders";
+import OrderDetails from "./pages/artisan/OrderDetails/OrderDetails";
+
+
+import Clients from "./pages/artisan/Clients/Client"; 
+import Settings from "./pages/artisan/Settings/Settings";
 import ClientTracking from "./pages/client/ClientTracking/ClientTracking";
 import ClientDashboard from "./pages/client/ClientDashboard/ClientDashboard";
 
@@ -43,11 +48,14 @@ const App = () => {
           }>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="orders" element={<Orders />} />
+            <Route path="orders/:id" element={<OrderDetails />} />
+            <Route path="clients" element={<Clients />} /> 
+            <Route path="settings" element={<Settings />} /> 
           </Route>
 
-          {/* Client Module */}
           <Route path="/client/dashboard" element={<ClientDashboard />} />
           <Route path="/client/tracking" element={<ClientTracking />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
