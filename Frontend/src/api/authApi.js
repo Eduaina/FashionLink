@@ -18,14 +18,14 @@ export const authApi = {
     };
   },
 
-  signup: async (email, password, role) => {
+  signup: async (name, email, password, role) => {
     // We 'read' all values here
-    const newUser = { email, password, role };
+    const newUser = {name, email, password, role };
     console.log("Saving new user to mock database:", newUser.email);
     
     return { 
       data: { 
-        message: "User created successfully"
+        message: "Welcome ${newUser.name}"
       } 
     };
   },
@@ -33,7 +33,7 @@ export const authApi = {
   me: async () => {
     return {
       data: {
-        user: { id: "1", email: "ediuana@fashionlink.com", role: "designer" }
+        user: {name: "Promise", id: "1", email: "demo@fashionlink.com", role: "designer" }
       }
     };
   }
