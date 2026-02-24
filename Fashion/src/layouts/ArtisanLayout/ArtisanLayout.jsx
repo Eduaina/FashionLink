@@ -11,9 +11,14 @@ import "./ArtisanLayout.css";
 
 /* Map route path → page id used by Sidebar */
 const PATH_TO_PAGE = {
-  "/artisan/dashboard": "dashboard",
-  "/artisan/orders":    "orders",
-  "/artisan/add-order": "orders",   // highlight Orders when on add-order
+  "/artisan/dashboard":      "dashboard",
+  "/artisan/orders":         "orders",
+  "/artisan/add-order":      "orders",
+  "/artisan/clients":        "clients",
+  "/artisan/clients/add":    "clients",
+  "/artisan/network":        "network",
+  "/artisan/notifications":  "notifications",
+  "/artisan/settings":       "settings",
 };
 
 /* Map sidebar link id → route path */
@@ -21,15 +26,19 @@ const PAGE_TO_PATH = {
   dashboard:     "/artisan/dashboard",
   orders:        "/artisan/orders",
   clients:       "/artisan/clients",
+  network:       "/artisan/network",
   notifications: "/artisan/notifications",
   settings:      "/artisan/settings",
 };
 
 /* Page meta: title + subtitle per route */
 const PAGE_META = {
-  "/artisan/dashboard": { title: "Dashboard",  subtitle: "Welcome back, Grace"         },
-  "/artisan/orders":    { title: "Orders",      subtitle: "Manage your client orders"   },
-  "/artisan/add-order": { title: "New Order",   subtitle: "Create a new client order"   },
+  "/artisan/dashboard":   { title: "Dashboard",      subtitle: "Welcome back, Grace"        },
+  "/artisan/orders":      { title: "Orders",         subtitle: "Manage your client orders"  },
+  "/artisan/add-order":   { title: "New Order",      subtitle: "Create a new client order"  },
+  "/artisan/clients":     { title: "Clients",        subtitle: "6 clients"                  },
+  "/artisan/clients/add": { title: "Clients",        subtitle: "6 clients"                  },
+  "/artisan/network":     { title: "Artisan Network",subtitle: "Connect with other artisans"},
 };
 
 export default function ArtisanLayout({ children }) {
@@ -40,6 +49,8 @@ export default function ArtisanLayout({ children }) {
   /* Derive sidebar active item and header meta from current path */
   const pathBase    = "/" + location.pathname.split("/").slice(1, 3).join("/");
   const activePage  = PATH_TO_PAGE[location.pathname] ?? PATH_TO_PAGE[pathBase] ?? "dashboard";
+  /* For client profile pages, highlight clients in sidebar */
+  const resolvedActive = location.pathname.startsWith("/artisan/clients") ? "clients" : activePage;
   const meta        = PAGE_META[location.pathname] ?? PAGE_META[pathBase] ?? PAGE_META["/artisan/dashboard"];
 
   const handleNavigate = (pageId) => {
@@ -55,7 +66,7 @@ export default function ArtisanLayout({ children }) {
       )}
 
       <Sidebar
-        activePage={activePage}
+        activePage={resolvedActive}
         onNavigate={handleNavigate}
         mobileOpen={sidebarOpen}
       />
