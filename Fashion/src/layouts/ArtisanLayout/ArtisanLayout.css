@@ -1,10 +1,3 @@
-/* ════════════════════════════════════════════════════════════════
-   ArtisanLayout.css  —  prefix: al-
-   THE scroll contract for the whole app.
-   Rule: overflow:hidden everywhere EXCEPT .al__content.
-   ════════════════════════════════════════════════════════════════ */
-
-/* Root shell — viewport-locked, never overflows */
 .al {
   display: flex;
   width: 100vw;
@@ -47,9 +40,9 @@
 .al__content::-webkit-scrollbar-track  { background: transparent; }
 .al__content::-webkit-scrollbar-thumb  { background: #d0d4e8; border-radius: 10px; }
 
-/* md */
+
 @media (max-width: 1023px) { .al__content { padding: 24px 24px; } }
-/* sm */
+
 @media (max-width: 767px)  { .al__content { padding: 20px 16px; } }
-/* xs */
+
 @media (max-width: 479px)  { .al__content { padding: 16px 12px; } }
