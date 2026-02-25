@@ -1,4 +1,4 @@
-import Icon from "../../Icon.jsx";
+import Icon from "../../../Icon.jsx";
 import StatusBadge from "../../StatusBadge/StatusBadge.jsx";
 import "./OrdersTable.css";
 

@@ -1,24 +1,3 @@
-/**
- * App.jsx — root router
- *
- * Route map:
- *   PUBLIC
- *   /                    → LandingPage
- *   /signup              → SignupPage
- *   /login               → LoginPage
- *
- *   PROTECTED (artisan)
- *   /artisan/dashboard   → Dashboard
- *   /artisan/orders      → Orders
- *   /artisan/orders/:id  → OrderDetails
- *   /artisan/add-order   → NewOrder
- *
- *   PROTECTED (client)
- *   /client/dashboard    → ClientDashboard
- *
- *   FALLBACK
- *   *                    → redirect to /
- */
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth }  from "./context/AuthContext.jsx";
 
@@ -45,12 +24,8 @@ import AddClient     from "./pages/artisan/AddClients/AddClient.jsx";
 /* Client pages */
 import ClientDashboard from "./pages/client/Dashboard/ClientDashboard.jsx";
 
-/* ── Route guards ─────────────────────────────────────────────── */
+/* Route guards */
 
-/**
- * ProtectedRoute — redirects to /login if no active session.
- * Optionally restrict to a specific role.
- */
 function ProtectedRoute({ children, role }) {
   const { user } = useAuth();
   if (!user) return <Navigate to="/login" replace />;

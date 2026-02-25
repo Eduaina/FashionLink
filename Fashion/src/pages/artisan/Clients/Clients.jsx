@@ -1,9 +1,3 @@
-/**
- * Clients.jsx  —  route: /artisan/clients
- * 3-column grid of client cards.
- * Hover → "View Profile" overlay (same pattern as OrderCard).
- * "Add Client" button → /artisan/clients/add
- */
 import { useState }          from "react";
 import { useNavigate }       from "react-router-dom";
 import { clients }           from "../../../data/mockData";

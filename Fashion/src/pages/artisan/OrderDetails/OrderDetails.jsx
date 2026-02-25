@@ -1,21 +1,7 @@
-/**
- * OrderDetails.jsx
- * Route: /artisan/orders/:id
- *
- * Layout (matches design):
- *  Header row  — ORD-XXX | client name  +  Edit / Delete buttons
- *  Back link
- *  ─────────────────────────────────────────────────────
- *  LEFT COLUMN (flex: 1)          RIGHT COLUMN (320px)
- *   Smart Order Summary (AI card)  Status panel
- *   Order Details grid             Style Reference image
- *   Measurement grid               Quick Links
- *   Client Update (AI message)
- */
 import { useState }                  from "react";
 import { useParams, useNavigate }     from "react-router-dom";
 import { allOrders, clients }         from "../../../data/mockData.js";
-import StatusBadge                    from "../../../components/StatusBadge/StatusBadge.jsx";
+import StatusBadge                    from "../../../components/artisan/StatusBadge/StatusBadge.jsx";
 import "./OrderDetails.css";
 
 /* Status progression steps */

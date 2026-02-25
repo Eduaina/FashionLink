@@ -1,4 +1,4 @@
-import Icon from "../../Icon.jsx";
+import Icon from "../../../Icon.jsx";
 import "./StatCard.css";
 
 export default function StatCard({ label, value, icon, variant = "default" }) {

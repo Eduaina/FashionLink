@@ -1,4 +1,4 @@
-import Icon from "../../Icon.jsx";
+import Icon from "../../../Icon.jsx";
 import "./AICard.css";
 
 export default function AICard({ title, children, variant = "default" }) {

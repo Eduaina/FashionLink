@@ -1,8 +1,3 @@
-/**
- * LandingPage.jsx
- * Route: /
- * Matches uploaded design exactly.
- */
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 

@@ -1,16 +1,10 @@
-/* ════════════════════════════════════════════════════════════════
-   AddClient.css  —  prefix: ac-
-   Full-page centered card, matches ADD_CLIENT.png design.
-   ════════════════════════════════════════════════════════════════ */
-
-/* ── Page wrapper ────────────────────────────────────────────── */
 .ac {
   display: flex;
   justify-content: center;
   padding: 0 16px 40px;
 }
 
-/* ── Card ────────────────────────────────────────────────────── */
+/* ── Card */
 .ac__card {
   width: 100%;
   max-width: 680px;
@@ -24,7 +18,7 @@
   animation: fadeUp 0.3s ease both;
 }
 
-/* ── Header ──────────────────────────────────────────────────── */
+/* ── Header ─ */
 .ac__header {
   display: flex;
   align-items: flex-start;
@@ -56,7 +50,7 @@
 
 .ac__close:hover { color: #1a1d2e; }
 
-/* ── Form ────────────────────────────────────────────────────── */
+/* ── Form  */
 .ac__form {
   display: flex;
   flex-direction: column;
@@ -82,7 +76,9 @@
   position: relative;
 }
 
-.ac__field:last-child { border-bottom: none; }
+.ac__field:last-child { 
+  border-bottom: none; 
+}
 
 .ac__label {
   font-family: 'DM Sans', sans-serif;
@@ -105,14 +101,16 @@
   width: 100%;
 }
 
-.ac__input::placeholder { color: #b0b8d0; }
+.ac__input::placeholder { 
+  color: #b0b8d0; 
+}
 
 .ac__input:focus {
   border-color: #6C63FF;
   box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
 }
 
-/* ── Phone field ─────────────────────────────────────────────── */
+/* ── Phone field */
 .ac__phone-wrap {
   display: flex;
   align-items: center;
@@ -129,7 +127,9 @@
   box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
 }
 
-.ac__country-selector { position: relative; }
+.ac__country-selector { 
+  position: relative; 
+}
 
 .ac__country-btn {
   display: flex;

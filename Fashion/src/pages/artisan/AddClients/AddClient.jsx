@@ -1,8 +1,3 @@
-/**
- * AddClient.jsx  —  route: /artisan/clients/add
- * Full-page form. Matches ADD_CLIENT.png design.
- * On submit → adds to mock store → navigates to /artisan/clients
- */
 import { useState }    from "react";
 import { useNavigate } from "react-router-dom";
 import { clients }     from "../../../data/mockData";

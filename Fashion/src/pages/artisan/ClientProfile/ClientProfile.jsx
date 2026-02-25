@@ -1,11 +1,6 @@
-/**
- * ClientProfile.jsx  —  route: /artisan/clients/:id
- * Shows client info card, order history, and current measurements.
- * Matches CLIENTS_PROFILE.png design exactly.
- */
 import { useParams, useNavigate } from "react-router-dom";
 import { clients, allOrders }     from "../../../data/mockData";
-import StatusBadge                from "../../../components/StatusBadge/StatusBadge.jsx";
+import StatusBadge                from "../../../components/artisan/StatusBadge/StatusBadge.jsx";
 import "./ClientProfile.css";
 
 function initials(name) {

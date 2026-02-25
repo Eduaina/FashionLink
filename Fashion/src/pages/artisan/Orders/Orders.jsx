@@ -1,8 +1,8 @@
 import { useState }    from "react";
 import { useNavigate } from "react-router-dom";
 import { allOrders }   from "../../../data/mockData.js";
-import OrderCard       from "../../../components/UI/OrderCard/OrderCard.jsx";
-import FilterDropdown  from "../../../components/UI/FilterDropdown/FilterDropdown.jsx";
+import OrderCard       from "../../../components/artisan/UI/OrderCard/OrderCard.jsx";
+import FilterDropdown  from "../../../components/artisan/UI/FilterDropdown/FilterDropdown.jsx";
 import "./Orders.css";
 
 const TABS = [

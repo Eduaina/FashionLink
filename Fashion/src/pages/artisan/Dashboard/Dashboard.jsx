@@ -1,8 +1,8 @@
 import { useState }     from "react";
 import { useNavigate }  from "react-router-dom";
-import StatCard    from "../../../components/UIDashboard/StatCard/StatCard.jsx";
-import AICard      from "../../../components/UIDashboard/AICard/AICard.jsx";
-import OrdersTable from "../../../components/UIDashboard/OrdersTable/OrdersTable.jsx";
+import StatCard    from "../../../components/artisan/UIDashboard/StatCard/StatCard.jsx";
+import AICard      from "../../../components/artisan/UIDashboard/AICard/AICard.jsx";
+import OrdersTable from "../../../components/artisan/UIDashboard/OrdersTable/OrdersTable.jsx";
 import Icon        from "../../../components/Icon.jsx";
 import { dashboardStats, upcomingOrders, aiAlerts } from "../../../data/mockData.js";
 import "./Dashboard.css";

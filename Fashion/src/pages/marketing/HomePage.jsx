@@ -1,20 +1,3 @@
-/**
- * HomePage.jsx  —  route: /home
- * Full marketing page. Linked from LandingPage "Learn" button.
- * Sections (matching PDF):
- *  1. Nav
- *  2. Hero
- *  3. Core features (3 cards)
- *  4. AI Intelligence (split)
- *  5. Simple tracking (split)
- *  6. Efficiency (bento)
- *  7. Mission
- *  8. Testimonials
- *  9. CTA banner
- * 10. FAQ accordion
- * 11. Newsletter
- * 12. Footer
- */
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./HomePage.css";
