@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Sidebar from './Sidebar';
-import Dashboard from './pages/Dashboard';
-import MyOrders from './pages/MyOrders';
-import Messages from './pages/Messages';
-import Notifications from './pages/Notifications';
-import Profile from './pages/Profile';
+import Sidebar from './layout/ClientLayout/Sidebar.jsx';
+import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import MyOrders from './pages/MyOrders/MyOrders.jsx';
+import Messages from './pages/Messages/Messages.jsx';
+import Notifications from './pages/Notifications/Notifications.jsx';
+import Profile from './pages/Profile/Profile.jsx';
 import './App.css';
 
 function App() {
