@@ -10,7 +10,7 @@ import ClientLayout  from "./layouts/ClientLayout/ClientLayout.jsx";
 
 /* ── Home & Auth ──────────────────────────────────── */
 import HomePage           from "./pages/marketing/HomePage.jsx";
-import LandingPage        from "./pages/landing/LandingPage.jsx";
+import LandingPage        from "./pages/Landing/LandingPage.jsx";
 import SignupPage         from "./pages/auth/SignupPage.jsx";
 import LoginPage          from "./pages/auth/LoginPage.jsx";
 import ForgotPasswordPage from "./pages/auth/ForgotPasswordPage.jsx";
