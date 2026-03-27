@@ -226,7 +226,7 @@ function OrderDetailView({ order, onBack, onTrack }) {
 export default function MyOrders() {
   const { user }     = useAuth();
   /* KEY FIX: use email as key — must match pushOrderToClient in store.js */
-  const clientEmail = user?.email?.toLowerCase().trim() ?? null;
+  const clientEmail  = user?.email ?? null;
 
   const [orders,        setOrders]        = useState([]);
   const [loading,       setLoading]       = useState(true);
@@ -244,20 +244,13 @@ export default function MyOrders() {
     const local = getClientOrders(clientEmail);
     setOrders(local);
 
-    const formatStatus = (status = "pending") =>
-  status
-    .toLowerCase()
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, c => c.toUpperCase());
-
     // Try API
     ordersApi.list({ mine: 1 }).then(({ data, error }) => {
       if (!error && Array.isArray(data) && data.length > 0) {
         const normalised = data.map((raw) => ({
           id:           raw.order_number ?? String(raw.id),
           apiId:        raw.id,
-          clientEmail:  clientEmail,
-          status:       formatStatus(raw.status),
+          status:       (raw.status ?? "pending").charAt(0).toUpperCase() + (raw.status ?? "pending").slice(1).replace(/_/g, " "),
           description:  raw.description ?? "",
           notes:        raw.notes ?? "",
           delivery:     raw.delivery_date
