@@ -1,5 +1,6 @@
 .profile-content {
   padding: 24px 28px;
+  font-family: 'sora', sans-serif;
 }
 
 .profile-card {
@@ -56,7 +57,7 @@
   border-radius: 10px;
   padding: 12px 14px;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   color: #333;
   outline: none;
   background: #fff;
@@ -97,7 +98,7 @@
   color: #6b5ce7;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;;
 }
 
 .measurements-grid {
@@ -115,7 +116,7 @@
   border-radius: 8px;
   padding: 10px 12px;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;;
   color: #1a1f36;
   background: #fff;
   outline: none;
@@ -222,7 +223,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;;
   padding: 0;
 }
 
@@ -258,7 +259,7 @@
   background: none;
   width: 100%;
   text-align: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;;
 }
 
 .settings-section-header:hover { background: #f8f9fd; }
@@ -306,7 +307,7 @@
   border-radius: 10px;
   padding: 12px 14px;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   color: #333;
   outline: none;
   background: #fff;
@@ -324,7 +325,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
 }
 
 .settings-save-btn:hover { background: #6b5ce7; }
@@ -346,7 +347,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   width: 100%;
 }
 

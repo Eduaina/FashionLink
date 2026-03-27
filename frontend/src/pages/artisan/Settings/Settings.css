@@ -1,9 +1,6 @@
-/* ════════════════════════════════════════════════════════════════
-   Settings.css  —  prefix: st-
-   Matches SETTINGS.png design.
-   ════════════════════════════════════════════════════════════════ */
-
-.st { display: flex; flex-direction: column; gap: 0; }
+.st { display: flex; flex-direction: column; gap: 0;
+font-family: 'sora', sans-serif;
+ }
 
 .st__form {
   display: flex;

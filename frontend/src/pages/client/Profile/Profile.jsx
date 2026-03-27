@@ -1,13 +1,3 @@
-/**
- * Profile.jsx — /client/profile
- *
- * Phase 3:
- *  - Full name from signup session (AuthContext.user)
- *  - Gender selector changes measurement fields shown
- *  - All measurements editable and persist to localStorage
- *  - Avatar upload persists
- *  - Settings sub-view (notifications, change password, security, danger zone)
- */
 import { useState, useRef }  from "react";
 import { useAuth }            from "../../../context/AuthContext.jsx";
 import { getMeasurements, saveMeasurements, saveClientProfile, getClientProfile, registerClient } from "../../../services/store.js";

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  font-family: 'sora', sans-serif;
 }
 
 .messages-section-title {

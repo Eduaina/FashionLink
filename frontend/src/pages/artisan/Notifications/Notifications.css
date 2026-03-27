@@ -1,11 +1,8 @@
-/* ════════════════════════════════════════════════════════════════
-   Notifications.css  —  prefix: nf-
-   ════════════════════════════════════════════════════════════════ */
-
 .nf {
   display: flex;
   flex-direction: column;
   gap: 0;
+  font-family: 'sora', sans-serif;
 }
 
 /* ── Toolbar bar ─────────────────────────────────────────────── */
@@ -21,7 +18,6 @@
 }
 
 .nf__unread-label {
-  font-family: 'DM Sans', sans-serif;
   font-size: 0.88rem;
   font-weight: 600;
   color: #4a506b;
@@ -124,7 +120,7 @@
 }
 
 .nf-row__body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'sora', sans-serif;
   font-size: 0.85rem;
   color: #6b7494;
   margin: 0;
@@ -140,7 +136,7 @@
   gap: 5px;
   background: none;
   border: none;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'sora', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   color: #6C63FF;
@@ -162,7 +158,6 @@
 }
 
 .nf-row__time {
-  font-family: 'DM Sans', sans-serif;
   font-size: 0.78rem;
   color: #aab0c8;
   white-space: nowrap;

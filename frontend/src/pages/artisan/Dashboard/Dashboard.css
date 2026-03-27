@@ -1,9 +1,3 @@
-/* ════════════════════════════════════════════════════════════════
-   Dashboard.css  —  prefix: dash-
-   Page-level layout only. Component styles live in their own files.
-   ════════════════════════════════════════════════════════════════ */
-
-/* Page wrapper */
 .dash {
   display: flex;
   flex-direction: column;

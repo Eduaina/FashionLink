@@ -1,9 +1,3 @@
-/**
- * Notifications.jsx  —  route: /artisan/notifications
- * List of notifications with unread dots, "Mark as read" per row,
- * "Mark all as read" header action.
- * Unread count syncs back to Header via context/state.
- */
 import { useState } from "react";
 import "./Notifications.css";
 
