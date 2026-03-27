@@ -1,14 +1,3 @@
-/**
- * MyOrders.jsx — /client/orders
- *
- * Fixed:
- *  - getClientOrders() now keyed by user.email (matches artisan pushOrderToClient)
- *  - Search works across client name, artisan name, description, status
- *  - Hover shows "View Order Details" overlay
- *  - Click → inline OrderDetails view
- *  - Orders also tried from API (GET /api/orders?mine=1) and merged
- *  - Tracking opens inline overlay (same TrackingView used in artisan portal)
- */
 import { useState, useEffect, useMemo } from "react";
 import { useAuth }                       from "../../../context/AuthContext.jsx";
 import { getClientOrders, saveClientOrders } from "../../../services/store.js";
@@ -237,7 +226,7 @@ function OrderDetailView({ order, onBack, onTrack }) {
 export default function MyOrders() {
   const { user }     = useAuth();
   /* KEY FIX: use email as key — must match pushOrderToClient in store.js */
-  const clientEmail  = user?.email ?? null;
+  const clientEmail = user?.email?.toLowerCase().trim() ?? null;
 
   const [orders,        setOrders]        = useState([]);
   const [loading,       setLoading]       = useState(true);
@@ -255,13 +244,20 @@ export default function MyOrders() {
     const local = getClientOrders(clientEmail);
     setOrders(local);
 
+    const formatStatus = (status = "pending") =>
+  status
+    .toLowerCase()
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, c => c.toUpperCase());
+
     // Try API
     ordersApi.list({ mine: 1 }).then(({ data, error }) => {
       if (!error && Array.isArray(data) && data.length > 0) {
         const normalised = data.map((raw) => ({
           id:           raw.order_number ?? String(raw.id),
           apiId:        raw.id,
-          status:       (raw.status ?? "pending").charAt(0).toUpperCase() + (raw.status ?? "pending").slice(1).replace(/_/g, " "),
+          clientEmail:  clientEmail,
+          status:       formatStatus(raw.status),
           description:  raw.description ?? "",
           notes:        raw.notes ?? "",
           delivery:     raw.delivery_date

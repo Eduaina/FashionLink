@@ -1,5 +1,5 @@
 import { useState }    from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useData }     from "../../../context/DataContext.jsx";
 import OrderCard       from "../../../components/artisan/UI/OrderCard/OrderCard.jsx";
 import FilterDropdown  from "../../../components/artisan/UI/FilterDropdown/FilterDropdown.jsx";
@@ -129,7 +129,7 @@ export default function Orders() {
       {/* No clients yet — must register clients first */}
       {!loadingOrders && hasNoClients && (
         <div className="op__empty op__empty--info">
-          <span className="op__empty-icon">👤</span>
+          {/* <span className="op__empty-icon">👤</span> */}
           <p className="op__empty-text">
             You must register your{" "}
             <Link to="/artisan/clients/add" className="op__clients-link">
