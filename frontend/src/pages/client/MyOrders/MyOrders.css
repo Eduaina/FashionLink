@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: 'sora', sans-serif;
 }
 
 .orders-search-row {
@@ -30,8 +31,8 @@
   border: 1px solid #e8eaf0;
   border-radius: 10px;
   padding: 10px 14px 10px 36px;
-  font-size: 13px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-family: 'sora', sans-serif;
   color: #333;
   outline: none;
   background: #fff;
@@ -47,11 +48,11 @@
   background: #fff;
   border-radius: 10px;
   padding: 10px 16px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 500;
   color: #333;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
 }
 
 .filter-tabs {
@@ -69,7 +70,7 @@
   font-weight: 500;
   color: #555;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   transition: all 0.15s;
 }
 
@@ -169,7 +170,7 @@
   font-size: 14px;
   color: #6b5ce7;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   font-weight: 500;
   padding: 0;
 }
@@ -301,7 +302,7 @@
   border-radius: 8px;
   padding: 8px 12px;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   color: #1a1f36;
   background: #f8f9fd;
   outline: none;
@@ -326,7 +327,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
 }
 
 .contact-artisan-btn:hover { background: #6b5ce7; }
@@ -338,7 +339,7 @@
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   padding: 0;
 }
 
@@ -370,7 +371,7 @@
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   transition: all 0.15s;
 }
 .co-track-btn:hover { background: #e0e7ff; }
@@ -401,12 +402,12 @@
 }
 
 .co-tracking-header { display: flex; justify-content: space-between; align-items: flex-start; }
-.co-tracking-title { font-size: 20px; font-weight: 700; color: #1a1f36; margin: 0; font-family: 'Poppins', sans-serif; }
-.co-tracking-subtitle { font-size: 13px; color: #9a9ab0; margin: 4px 0 0; font-family: 'Poppins', sans-serif; }
+.co-tracking-title { font-size: 20px; font-weight: 700; color: #1a1f36; margin: 0; font-family: 'sora', sans-serif; }
+.co-tracking-subtitle { font-size: 13px; color: #9a9ab0; margin: 4px 0 0; font-family: 'sora', sans-serif; }
 .co-tracking-close { background: #f4f6fb; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; }
 
 .co-tracking-status-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-.co-tracking-delivery { font-size: 13px; color: #6b7494; font-family: 'Poppins', sans-serif; }
+.co-tracking-delivery { font-size: 13px; color: #6b7494; font-family: 'sora', sans-serif; }
 
 .co-tracking-ai {
   display: flex;
@@ -417,7 +418,7 @@
   padding: 14px;
   font-size: 13px;
   color: #78350f;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   line-height: 1.5;
 }
 
@@ -431,21 +432,21 @@
 .co-timeline-line { width: 2px; flex: 1; background: #e0e2ea; min-height: 20px; margin-top: 2px; }
 .co-timeline-line.done { background: #6b5ce7; }
 .co-timeline-content { padding-top: 2px; }
-.co-timeline-title { font-size: 13px; font-weight: 600; color: #1a1f36; margin: 0 0 3px; font-family: 'Poppins', sans-serif; }
-.co-timeline-desc { font-size: 12px; color: #9a9ab0; margin: 0; font-family: 'Poppins', sans-serif; line-height: 1.4; }
+.co-timeline-title { font-size: 13px; font-weight: 600; color: #1a1f36; margin: 0 0 3px; font-family: 'sora', sans-serif; }
+.co-timeline-desc { font-size: 12px; color: #9a9ab0; margin: 0; font-family: 'sora', sans-serif; line-height: 1.4; }
 
 /* Measurements in tracking */
 .co-tracking-meas { display: flex; flex-direction: column; gap: 10px; }
-.co-tracking-section-label { font-size: 11px; font-weight: 700; color: #9a9ab0; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; font-family: 'Poppins', sans-serif; }
+.co-tracking-section-label { font-size: 11px; font-weight: 700; color: #9a9ab0; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; font-family: 'sora', sans-serif; }
 .co-tracking-meas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .co-tracking-meas-field { display: flex; flex-direction: column; gap: 4px; }
-.co-tracking-meas-label { font-size: 11px; color: #9a9ab0; font-family: 'Poppins', sans-serif; }
-.co-tracking-meas-value { font-size: 14px; font-weight: 600; color: #1a1f36; background: #f8f9fd; border-radius: 8px; padding: 8px 10px; font-family: 'Poppins', sans-serif; }
+.co-tracking-meas-label { font-size: 11px; color: #9a9ab0; font-family: 'sora', sans-serif; }
+.co-tracking-meas-value { font-size: 14px; font-weight: 600; color: #1a1f36; background: #f8f9fd; border-radius: 8px; padding: 8px 10px; font-family: 'sora', sans-serif; }
 
 .co-tracking-copy-btn {
   background: #1a1f36; color: #fff; border: none; border-radius: 10px;
   padding: 12px 20px; font-size: 13px; font-weight: 600; cursor: pointer;
-  font-family: 'Poppins', sans-serif; transition: background 0.15s; margin-top: 4px;
+  font-family: 'sora', sans-serif; transition: background 0.15s; margin-top: 4px;
 }
 .co-tracking-copy-btn:hover { background: #6b5ce7; }
 
@@ -478,7 +479,7 @@
   color: #fff;
   font-size: 13px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'sora', sans-serif;
   border-radius: 0;
   pointer-events: none;
 }
