@@ -1,15 +1,7 @@
-/* ═══════════════════════════════════════════════════════════════
-   FILE: src/pages/artisan/Orders/Orders.css
-   Scope prefix: op-  (Orders Page)
-   Rule: NOTHING here targets elements outside .op
-═══════════════════════════════════════════════════════════════ */
-
-/* ── Page shell ─────────────────────────────────────────────── */
 .op {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* No fixed height — parent (main-content) handles scroll */
   animation: op-enter 0.3s ease both;
 }
 
