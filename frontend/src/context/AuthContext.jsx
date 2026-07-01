@@ -2,7 +2,7 @@
  * AuthContext.jsx
  *
  * Wired to the Fashion Link API (finalPostman.json).
- * Base URL: https://fashion-link-m2y7.onrender.com
+ * Base URL: https://team-68-fashionlink-app.onrender.com
  *
  * ── Auth endpoints ────────────────────────────────────────────
  *
@@ -42,7 +42,7 @@ import { registerClient } from "../services/store.js";
 const AuthContext = createContext(null);
 
 /* ── Constants ───────────────────────────────────────────────── */
-const BASE_URL = "https://fashion-link-m2y7.onrender.com";
+const BASE_URL = "https://team-68-fashionlink-app.onrender.com";
 
 const ROLE_ROUTES = {
   artisan: "/artisan/dashboard",
